@@ -112,10 +112,13 @@ if eleccion != "":
     mi_contrasena = recuperar_contrasena(clave_priv, eleccion)
     print(f"La contraseña para {eleccion} es: {mi_contrasena}")
 else:
-    clave_priv = input(' -- Puede usar su password, para acceder a su clave habitual o puede teclearla directamente:  '
-                       '        --->  Introduzca su password o ponga la clave directamente:  \n  '
-                       '        --->  Generar nueva clave de cifrado?  ---> pulse INTRO \n  T'
-                       '     Teclado : ...')
+    clave_priv = input(' -- Puede usar su password, para acceder a su clave habitual o puede teclearla directamente:  \n'
+                       '        - Introduzca su password personal o clave maestra --->   \n\n'
+                                                 
+                       '        -  o PULSE INTRO ---->  Generar nueva clave de cifrado    \n\n'
+    
+                                                                                      
+                       '                          Teclado : ... \n')
     if clave_priv != "":
         clave = clave_priv
     else:
